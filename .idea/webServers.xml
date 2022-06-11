@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dad591e4-bf50-4322-b0b1-ae2d045c18cf" name="hadoop102" url="http://hadoop102:20">
+        <fileTransfer accessType="SFTP" host="hadoop102" port="22" sshConfigId="f37ac068-1f04-49d5-a621-79a9b175f473" sshConfig="wxg@hadoop102:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="cf363afd-76d4-4da3-a833-d3fb9b734fd4" name="hadoop103" url="http://hadoop103:20">
+        <fileTransfer accessType="SFTP" host="hadoop103" port="22" sshConfigId="5a3962b2-e5f7-480d-b73d-fd059b58b5a0" sshConfig="wxg@hadoop103:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="49c23f28-ff4a-4cae-8a8b-2fe8e911f499" name="hadoop104" url="http://hadoop104:20">
+        <fileTransfer accessType="SFTP" host="hadoop104" port="22" sshConfigId="9accb4ad-f1f2-42ce-9810-3a31a364750e" sshConfig="wxg@hadoop104:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="490fcfe3-f974-4189-a0b0-180081a9fe7f" name="Bigdata" url="http://localhost:20">
+        <fileTransfer mountedRoot="E:\大数据技术资料" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>hadoop</name>
+        <servers>
+          <name value="hadoop102" />
+          <name value="hadoop103" />
+          <name value="hadoop104" />
+          <name value="Bigdata" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>

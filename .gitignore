@@ -1,0 +1,4 @@
+# 项目排除路径
+/DefSinks/target/
+/DefSources/target/
+/flumeInterceptor/target/
